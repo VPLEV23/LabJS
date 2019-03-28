@@ -13,11 +13,10 @@ document.write("</table>");
 document.write("Сума першого та останнього: " + (values[0] + values[values.length-1]));
 document.write("<br>Сума(y < -3.2): " + sum(values, true, -3.2));
 document.write("<br>Сума(y > 0): " + sum(values, false, 0));
-document.write("<br><br>Сума додатьніх: " + sum(values, false, 0));
-document.write("<br>Кількість додатніх: " + count(values, false, 0));
+
 
 function sum(values, less, than) {
-    let sum = 0;
+    let sum = 0; 
     for (let i = 0; i < values.length; i++) {
         if (less)
             sum += values[i] < than ? values[i] : 0;
