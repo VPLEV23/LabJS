@@ -7,7 +7,8 @@ let sum = 0
 for (let i = start; i <= end; i++)
     values.push(f12(i));
 for(let i = 0; i <= end; i++){
-    if(values[i] > 0)
+    if(values[i] > 0){
     sum = values[3] + values[6];
+    }
 }
 document.write(sum);
